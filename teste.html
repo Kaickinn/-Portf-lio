@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mais efeitos CSS em imagens no hover</title>
+    <style>
+        body {
+            background: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+        .img-container {
+            width: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 0.4s ease;
+        }
+
+        /* Efeito 7: Escala + desfoque de fundo */
+        .zoom-blur img:hover {
+            transform: scale(1.1);
+            filter: blur(1.5px);
+        }
+
+        /* Efeito 8: Saturação */
+        .saturate img:hover {
+            filter: saturate(3);
+        }
+
+        /* Efeito 9: Opacidade + escala */
+        .opacity-scale img:hover {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+
+        /* Efeito 10: Translate e sombra */
+        .translate-shadow img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+        }
+
+        /* Efeito 11: Escala + brilho */
+        .scale-bright img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Efeito 12: Inverter cores */
+        .invert img:hover {
+            filter: invert(1);
+        }
+
+        /* Efeito 13: Escala + rotação */
+        .scale-rotate img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Efeito 14: Sombra projetada colorida */
+        .color-shadow img:hover {
+            box-shadow: 0 0 20px 5px #ff4d6d;
+        }
+
+        /* Efeito 15: Blur + saturate */
+        .blur-saturate img:hover {
+            filter: blur(1px) saturate(2);
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Repeti a mesma imagem só pra facilitar visualização -->
+
+<div class="img-container zoom-blur">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Zoom Blur" />
+</div>
+
+<div class="img-container saturate">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Saturate" />
+</div>
+
+<div class="img-container opacity-scale">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Opacity Scale" />
+</div>
+
+<div class="img-container translate-shadow">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Translate Shadow" />
+</div>
+
+<div class="img-container scale-bright">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Scale Bright" />
+</div>
+
+<div class="img-container invert">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Invert Colors" />
+</div>
+
+<div class="img-container scale-rotate">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Scale Rotate" />
+</div>
+
+<div class="img-container color-shadow">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Color Shadow" />
+</div>
+
+<div class="img-container blur-saturate">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=150&q=80" alt="Blur Saturate" />
+</div>
+
+</body>
+</html>

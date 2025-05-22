@@ -1,0 +1,95 @@
+body{
+    color: white;
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+span{
+    color: yellow;
+}
+span:hover{
+    text-decoration: underline;
+}
+.fotos{
+    margin-right: 9%;
+}
+
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: #FE6A0F;
+}
+
+.img-container {
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fotos{
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+
+    color: #5F5F5F;
+}
+
+footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyrights {
+    font-size: 24px;
+    color: #5F5F5F;
+}
+
+footer .copyrights a {
+    color: #5F5F5F;
+    text-decoration: none;
+}
+
+footer .copyrights a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .respon {
+        margin-right: 11%;
+        margin-top: 7%;
+    }
+    .ksnahisca{
+        margin-right: 11%;
+        margin-top: 21px;
+    }
+    .fotos{
+        margin-right: 27%;
+    }
+    .creditos{
+        display: block;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .img-fundo{
+        margin-top: 212%;
+        left: 58%
+    }
+    .pjt{
+        width: 416px;
+    }
+}
+
